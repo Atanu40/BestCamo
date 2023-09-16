@@ -1,0 +1,209 @@
+{% if end_date != blank %}
+
+  <div class="timer {{ page_title }}">
+
+    {% if title != blank %}
+      <h4 class="timer__title ">{{ title }}</h4>
+    {% endif %}
+
+    <div class="timer-display">
+
+      <div class="timer-block">
+
+        <span class="timer-block__num js-timer-days">00</span>
+
+        <span class="timer-block__unit">Days</span>
+
+      </div>
+
+      <div class="timer-block">
+
+        <span class="timer-block__num js-timer-hours">00</span>
+
+        <span class="timer-block__unit">Hrs</span>
+
+      </div>
+
+      <div class="timer-block">
+
+        <span class="timer-block__num js-timer-minutes">00</span>
+
+        <span class="timer-block__unit">Mins</span>
+
+      </div>
+
+      <div class="timer-block">
+
+        <span class="timer-block__num js-timer-seconds">00</span>
+
+        <span class="timer-block__unit">Sec</span>
+
+      </div>
+
+    </div>
+
+  </div>
+{% endif %}
+
+<style>
+
+
+  .timer.Lightenium {
+    position: absolute;
+    z-index: 10;
+    /*top: 77%;*/
+    top: 96%;
+    left: 15%;
+    transform: translate(-11%, -54%);
+  }
+
+  .Lightenium .timer-block {
+    width: 20%;
+  }
+
+
+  .timer {
+    padding: 10px 0;
+    margin: -27px 0 20px;
+  }
+
+  .timer--expired {
+    display: none;
+
+  }
+
+  .timer__title {
+
+    @extend .paragraph;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: red;
+    font-size: 16px;
+    line-height: 1.5;
+    {% comment %} color: #667085; {% endcomment %}
+    letter-spacing: 1px;
+    margin-top: 0;
+
+  }
+
+  .timer-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: left;
+    column-gap: 12px;
+    margin-top: 15px;
+  }
+
+  .Lightenium .timer-display {
+    justify-content: center !important;
+  }
+
+
+  .timer-block {
+
+    position: relative;
+    background-color: #F9FAFB;
+    gap: 12px;
+    width: 14%;
+    padding: 4px 10px;
+
+  }
+
+  .Lightenium .timer__title {
+    display: none;
+  }
+
+  .timer-block__num,
+  .timer-block__unit {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    display: in;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: #475467;
+    line-height: 1.2;
+
+  }
+
+  .timer-block__unit {
+    font-size: 14px;
+    color: #667085;
+    font-weight: 500;
+  }
+
+  /* media  query for 768px  */
+
+  @media screen and (max-width: 1080px) {
+
+    .timer.Lightenium {
+      top: 96%;
+      left: 37%;
+      transform: translate(-29%, -54%);
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .timer.Lightenium {
+      left: 34%;
+      transform: translate(-28%, -54%);
+    }
+  }
+</style>
+
+<script>
+  var second = 1000,
+    minute = second * 60,
+    hour = minute * 60,
+    day = hour * 24;
+
+
+  function timer() {
+    let end_date = '{{- end_date | escape | json -}}'
+      var countDown = new Date(end_date),
+        x = setInterval(function() {
+          var now = new Date().getTime(),
+            distance = countDown - now;
+
+          // console.log('distance',distance)
+          if (distance > 0) {
+
+            // document.querySelectorAll('.js-timer-days').innerText = Math.floor(distance / (day)),
+            // document.querySelector('.js-timer-hours').innerText = Math.floor((distance % (day)) / (hour)),
+            // document.querySelector('.js-timer-minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+            // document.querySelector('.js-timer-seconds').innerText = Math.floor((distance % (minute)) / second);
+            let days = document.querySelectorAll('.js-timer-days'),
+              hours = document.querySelectorAll('.js-timer-hours'),
+              minutes = document.querySelectorAll('.js-timer-minutes'),
+              seconds = document.querySelectorAll('.js-timer-seconds');
+
+            days.forEach(function(item) {
+              item.innerText = Math.floor(distance / (day));
+            });
+            hours.forEach(function(item) {
+              item.innerText = Math.floor((distance % (day)) / (hour));
+            });
+            minutes.forEach(function(item) {
+              item.innerText = Math.floor((distance % (hour)) / (minute));
+            });
+            seconds.forEach(function(item) {
+              item.innerText = Math.floor((distance % (minute)) / second);
+            });
+
+          }
+        }, second)
+
+      console.log(countDown);
+    }
+
+    timer();
+</script>

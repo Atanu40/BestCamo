@@ -1,0 +1,69 @@
+{{ "about-us-img-card.css" | asset_url | stylesheet_tag }}
+
+<div class="abt-us-card-grid-contain section-inner-gap">
+    <h2 class="section-title abt-title abt-hlp-headtxt sec-title-anim">{{section.settings.about_title}}</h2>
+    <div class="page-width">
+        <div class="abt-us-card-grid">
+            {% for item in section.blocks %}
+              <div class="card">
+                 <div class="card-top">
+                    {% if item.settings.about_us_image_card !=null %}
+                       {% render 'image', imageSrc: item.settings.about_us_image_card, classes: 'card-img' %}
+                    {%else %} 
+                       {{ 'lifestyle-1' | placeholder_svg_tag: 'card-img' }}
+                    {% endif %}  
+                 </div>
+                 <div class="card-bottom">
+                    <h3 class="abt-crd-btm-heading">{{item.settings.about_us_image_card_headtxt}}</h3>
+                    <p class="abt-crd-btm-para">{{item.settings.about_us_image_card_title}}</p>
+                 </div>
+              </div>
+            {% endfor %}     
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "about us image card",
+        "blocks": [
+   {
+        "type": "abt-img-card",
+        "name": "abt-img-card Item",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "about_us_image_card",
+                "label": "Choose about us Image"
+            },
+            {
+                "type": "text",
+                "id": "about_us_image_card_headtxt",
+                "label": "Choose about us card heading"
+            },
+            {
+                "type": "text",
+                "id": "about_us_image_card_title",
+                "label": "Choose abt_us_card title"
+            }  
+        ]
+    }
+ ],
+
+ "settings": 
+ [  
+   {
+        "type": "text",
+        "id": "about_title",
+        "label": "Choose about title"
+    }
+    
+], 
+    
+    "presets": [
+    {
+         "name": "about us image card"
+    }
+ ]
+}
+{% endschema %}

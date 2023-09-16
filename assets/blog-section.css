@@ -1,0 +1,61 @@
+.blog-banner-parent {
+    background-color: #221C17;
+}
+
+.blog-banner {
+    height: 36vh;
+}
+
+.blog-banner__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-banner__image::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    right: 12px;
+    bottom: 11px;
+    border: var(--border-line);
+}
+
+.blg-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.blog-banner__title {
+    position: absolute;
+    font-family: "dreamwalker";
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 40px;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 28, 22, 0.3);
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .blog-banner {
+        height: 22vh;
+    }    
+}

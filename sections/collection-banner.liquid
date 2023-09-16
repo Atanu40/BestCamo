@@ -1,0 +1,54 @@
+{{ 'collection-banner.css' | asset_url | stylesheet_tag }}
+<style>
+  .col-banner {
+    margin-top: {{ section.settings.mt }}px;
+    margin-bottom: {{ section.settings.mb }}px;
+  }
+</style>
+<section class="col-banner">
+    <div class="page-width">
+       <div class="col-banner-content">
+              {% if section.settings.col_banner != null %}
+                {% render 'image', imageSrc: section.settings.col_banner, classes: 'col-banner-img' %}
+            {%else %}
+                {{ 'lifestyle-1' | placeholder_svg_tag: 'col-banner-img' }}
+            {% endif %}
+            <div class="overlay">&nbsp;</div>
+            <h2 class="col-banner-title page-title" >{{ collection.title }}</h2>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "Collection Banner",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "col_banner",
+                "label": "Collection Banner"
+            },{
+                 "type": "range",
+                  "id": "mt",
+                  "label": "Margin Top",
+                   "min": 0,
+                   "max": 100,
+                   "step": 5,
+                   "default": 0
+      }, {
+                 "type": "range",
+                 "id": "mb",
+                 "label": "Margin Bottom",
+                 "min": 0,
+                 "max": 100,
+                 "step": 5,
+                 "default": 0
+      }
+        ],
+        "presets": [
+            {
+                "name": "Collection Banner"
+            }
+        ]
+    }
+{% endschema %}

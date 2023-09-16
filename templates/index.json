@@ -1,0 +1,563 @@
+{
+  "sections": {
+    "e9c3cf8b-f09d-430a-ac37-f68526563551": {
+      "type": "newsletter-popup",
+      "settings": {
+        "news_img": "shopify:\/\/shop_images\/i.jpg",
+        "fb_link": "https:\/\/www.facebook.com\/noseeumcamo\/",
+        "twt_link": "\/",
+        "yt_link": "https:\/\/www.youtube.com\/channel\/UC2CxKxhUNfw3tfblxVEg1Ww",
+        "insta_lnk": "https:\/\/www.instagram.com\/thebestcamo\/"
+      }
+    },
+    "dd483a70-936e-4b85-876f-ec7775ec8bf3": {
+      "type": "hero",
+      "settings": {
+        "hero_banner": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_1.jpg",
+        "hero_img1": "shopify:\/\/shop_images\/jakob-owens-lkMJcGDZLVs-unsplash_1_1.jpg",
+        "hero_img2": "shopify:\/\/shop_images\/roadtrips-lst-mens-1_1200x1200_1.jpg",
+        "hero_title": "COLLECTION AND STYLE  FOR EVERYONE",
+        "hero_sub": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+        "btn_text": "SHOP NOW",
+        "btn_url": "shopify:\/\/collections"
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "0d817ca3-0d3b-4fbc-80dc-ec0f86f48825": {
+      "type": "new-arival-slider",
+      "blocks": {
+        "0cbb00d0-3226-447c-a58b-028bd75c0016": {
+          "type": "produt",
+          "settings": {
+            "product": "anything-scissors"
+          }
+        },
+        "7f2bd2fe-da04-4302-adf3-4f5b8e7e834b": {
+          "type": "produt",
+          "settings": {
+            "product": "anything-stapler"
+          }
+        },
+        "8e27464d-3627-4362-88ad-a27337447c48": {
+          "type": "produt",
+          "settings": {
+            "product": "anything-tape-dispenser"
+          }
+        },
+        "0e0f7bdc-f719-456e-b7da-771ccd4902e3": {
+          "type": "produt",
+          "settings": {
+            "product": "arcs-vase"
+          }
+        },
+        "fe7e2010-a388-43d9-88e6-4c6c1f0d3d91": {
+          "type": "produt",
+          "settings": {
+            "product": "black-table"
+          }
+        },
+        "a5f6f957-3cdb-478e-b507-9d5eeffc01fe": {
+          "type": "produt",
+          "settings": {
+            "product": "bottoms-up-vase-azure"
+          }
+        },
+        "4578eb7d-c4d2-425a-b5f1-0ab9894bde32": {
+          "type": "produt",
+          "settings": {
+            "product": "anything-scissors"
+          }
+        }
+      },
+      "block_order": [
+        "0cbb00d0-3226-447c-a58b-028bd75c0016",
+        "7f2bd2fe-da04-4302-adf3-4f5b8e7e834b",
+        "8e27464d-3627-4362-88ad-a27337447c48",
+        "0e0f7bdc-f719-456e-b7da-771ccd4902e3",
+        "fe7e2010-a388-43d9-88e6-4c6c1f0d3d91",
+        "a5f6f957-3cdb-478e-b507-9d5eeffc01fe",
+        "4578eb7d-c4d2-425a-b5f1-0ab9894bde32"
+      ],
+      "settings": {
+        "arival_title": "Newarival",
+        "arival_sub": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        "arival_btn_txt": "SHOP NOW",
+        "arival_url": "shopify:\/\/collections",
+        "arival_img1": "shopify:\/\/shop_images\/i.jpg",
+        "arival_img2": "shopify:\/\/shop_images\/b.jpg",
+        "collection": "",
+        "arival_bg_color": "#34321c",
+        "ariva_grid_color": "#9c967e"
+      }
+    },
+    "fcda9f88-a7c7-43d6-ad5f-8a70af85e5e9": {
+      "type": "our-category",
+      "blocks": {
+        "778959fd-f6b2-4d58-8bea-7070cdfb943a": {
+          "type": "text",
+          "settings": {
+            "sml_img": "shopify:\/\/shop_images\/il_794xN.3721899471_51p2.jpg",
+            "cat_text": "<li>SHOP HATS BEANIES<br><span>AND COLLAR BAGS<\/span>\n<\/li>",
+            "card_class": "card-no-margin",
+            "cat_url": "shopify:\/\/collections\/collar-bags"
+          }
+        },
+        "27ba825d-8dfa-4afe-aee7-f37fb5cde3fc": {
+          "type": "text",
+          "settings": {
+            "sml_img": "shopify:\/\/shop_images\/il_794xN.3721899471_51p2.jpg",
+            "cat_text": "<li>SHOP HATS BEANIES<br><span>AND COLLAR BAGS<\/span>\n<\/li>",
+            "card_class": "card-margin-left",
+            "cat_url": "shopify:\/\/collections\/fishing-t-shirts"
+          }
+        },
+        "9c612f9c-1f33-4d1a-80b4-5dd87a75a2ff": {
+          "type": "text",
+          "settings": {
+            "sml_img": "shopify:\/\/shop_images\/il_794xN.3721899471_51p2.jpg",
+            "cat_text": "<li>SHOP HATS BEANIES<br><span>AND COLLAR BAGS<\/span>\n<\/li>",
+            "card_class": "card-no-margin",
+            "cat_url": "shopify:\/\/collections\/hog-hunting"
+          }
+        }
+      },
+      "block_order": [
+        "778959fd-f6b2-4d58-8bea-7070cdfb943a",
+        "27ba825d-8dfa-4afe-aee7-f37fb5cde3fc",
+        "9c612f9c-1f33-4d1a-80b4-5dd87a75a2ff"
+      ],
+      "settings": {
+        "cat_img": "shopify:\/\/shop_images\/DALL_E_2023-03-20_09.26.49_-_a_bearded_man_standing_in_a_forest_wearing_tshirt_1.jpg",
+        "cat_title": "Our Category"
+      }
+    },
+    "e7758c7d-b0be-472a-863e-98960bcf62e7": {
+      "type": "popular-products",
+      "blocks": {
+        "da07091e-4e52-4cde-97be-2289e7bc43a7": {
+          "type": "product",
+          "settings": {
+            "product": "anything-scissors"
+          }
+        },
+        "0c26f31b-5f00-4659-b80f-61e520834b9a": {
+          "type": "product",
+          "settings": {
+            "product": "anything-stapler"
+          }
+        },
+        "d7d0e465-5b10-41b4-a396-729804aca1c2": {
+          "type": "product",
+          "settings": {
+            "product": "anything-tape-dispenser"
+          }
+        },
+        "3e622516-1ef6-4801-9131-317ce6415b67": {
+          "type": "product",
+          "settings": {
+            "product": "arcs-vase"
+          }
+        },
+        "90013368-05c2-4b97-bf53-603394b119d0": {
+          "type": "product",
+          "settings": {
+            "product": "black-table"
+          }
+        },
+        "6d074b94-f5de-445d-b6bd-0f6022b8edf2": {
+          "type": "product",
+          "settings": {
+            "product": "bottoms-up-vase-azure"
+          }
+        },
+        "7ea28f70-e80d-4f5e-928c-b0a0b1647b66": {
+          "type": "product",
+          "settings": {
+            "product": "anything-scissors"
+          }
+        },
+        "1d7f57c6-fd21-4fb8-b1f0-07990ceb3f83": {
+          "type": "product",
+          "settings": {
+            "product": "arcs-vase"
+          }
+        }
+      },
+      "block_order": [
+        "da07091e-4e52-4cde-97be-2289e7bc43a7",
+        "0c26f31b-5f00-4659-b80f-61e520834b9a",
+        "d7d0e465-5b10-41b4-a396-729804aca1c2",
+        "3e622516-1ef6-4801-9131-317ce6415b67",
+        "90013368-05c2-4b97-bf53-603394b119d0",
+        "6d074b94-f5de-445d-b6bd-0f6022b8edf2",
+        "7ea28f70-e80d-4f5e-928c-b0a0b1647b66",
+        "1d7f57c6-fd21-4fb8-b1f0-07990ceb3f83"
+      ],
+      "settings": {
+        "pop_background": "shopify:\/\/shop_images\/imgpsh_fullsize_anim.jpg",
+        "pop_title": "Popular Products",
+        "pop_txt": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+        "btn_text": "Shop Now",
+        "btn_url": ""
+      }
+    },
+    "ab8b5648-c6b4-4d3b-8d26-e685af534196": {
+      "type": "new-ft-prod",
+      "blocks": {
+        "87e2ba3a-f798-49f7-87b5-aa6eae4e0e5f": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "d02fdbe5-2a6b-47ab-9e39-ba2d472e8837": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "d31dfc72-db37-471c-9cec-6a1e2aa2adce": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "7bb210ef-2cc6-4b9c-8f11-af081951b384": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        },
+        "c0a8ffbe-c838-4c9c-9161-9b239f684925": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "0c816123-d10f-4022-bcd8-625b55a6f632": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "149768a6-a214-471b-b5bf-d71d29e1e364": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "cdd1770e-9543-4841-aec1-16709cc05939": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
+          }
+        },
+        "edf095f8-ab09-4523-8bf7-a551bda18aa4": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "a4fc4c1d-debb-4059-9465-8f9ad208aaf5": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "1aaf030a-0ae2-42d2-b882-76f64e970bbd": {
+          "type": "icon-with-text",
+          "disabled": true,
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "heart",
+            "heading_1": "Heading",
+            "icon_2": "return",
+            "heading_2": "Heading",
+            "icon_3": "truck",
+            "heading_3": "Heading"
+          }
+        },
+        "12924a33-07c7-4f08-8b00-8e21f6ad7120": {
+          "type": "text",
+          "settings": {
+            "text": "<p>this is the best product<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "87e2ba3a-f798-49f7-87b5-aa6eae4e0e5f",
+        "d02fdbe5-2a6b-47ab-9e39-ba2d472e8837",
+        "d31dfc72-db37-471c-9cec-6a1e2aa2adce",
+        "7bb210ef-2cc6-4b9c-8f11-af081951b384",
+        "c0a8ffbe-c838-4c9c-9161-9b239f684925",
+        "0c816123-d10f-4022-bcd8-625b55a6f632",
+        "149768a6-a214-471b-b5bf-d71d29e1e364",
+        "cdd1770e-9543-4841-aec1-16709cc05939",
+        "edf095f8-ab09-4523-8bf7-a551bda18aa4",
+        "a4fc4c1d-debb-4059-9465-8f9ad208aaf5",
+        "1aaf030a-0ae2-42d2-b882-76f64e970bbd",
+        "12924a33-07c7-4f08-8b00-8e21f6ad7120"
+      ],
+      "settings": {
+        "product": "anything-scissors",
+        "section_title": "Product of the Month",
+        "enable_sticky_info": true,
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "background_color": "#221c16",
+        "image_background_color": "#34321c",
+        "padding_top": 120,
+        "padding_bottom": 120
+      }
+    },
+    "c964e1ea-20af-4297-bec2-c75269cdc72d": {
+      "type": "featured-product",
+      "disabled": true,
+      "blocks": {
+        "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-2": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-4": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-6": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-0",
+        "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-1",
+        "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-2",
+        "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-3",
+        "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-4",
+        "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-5",
+        "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-6"
+      ],
+      "settings": {
+        "feat_section_title": "PRODUCT OF THE MONTH",
+        "product": "anything-scissors",
+        "background_color": "#221c16",
+        "prod_media_bac_col": "#34321c",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 120,
+        "padding_bottom": 120
+      }
+    },
+    "05063734-7c9c-42d8-91db-9b751ca9bff9": {
+      "type": "review-slider",
+      "blocks": {
+        "428d129c-568d-4c13-97d8-88c67ed870b6": {
+          "type": "slider",
+          "settings": {
+            "slider_item_image": "shopify:\/\/shop_images\/e_bf9a8815-cb99-4088-9a3f-5e2985c16518.jpg",
+            "slider_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and",
+            "review_author": "James"
+          }
+        },
+        "a4832846-d9f9-4199-878e-d97c42ba303e": {
+          "type": "slider",
+          "settings": {
+            "slider_item_image": "shopify:\/\/shop_images\/i.jpg",
+            "slider_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and",
+            "review_author": "Konor"
+          }
+        },
+        "ace7e76d-0fc8-40de-8721-9b64ac241523": {
+          "type": "slider",
+          "settings": {
+            "slider_item_image": "shopify:\/\/shop_images\/jakob-owens-lkMJcGDZLVs-unsplash_1_1.jpg",
+            "slider_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and",
+            "review_author": "Judy"
+          }
+        }
+      },
+      "block_order": [
+        "428d129c-568d-4c13-97d8-88c67ed870b6",
+        "a4832846-d9f9-4199-878e-d97c42ba303e",
+        "ace7e76d-0fc8-40de-8721-9b64ac241523"
+      ],
+      "settings": {
+        "review_banner": "shopify:\/\/shop_images\/imgpsh_fullsize_anim.jpg",
+        "review_title": "WHAT OUR CLIENT SAY ABOUT US"
+      }
+    },
+    "e785c810-23fe-4b87-9923-39d6aacd6415": {
+      "type": "new-blog",
+      "blocks": {
+        "2e20e80c-4b1e-4728-8f11-1b35b14a0cbe": {
+          "type": "text",
+          "settings": {
+            "blog": "news\/lorem-ipsum-is-simply-dummy-text-of-the-printing-4"
+          }
+        },
+        "1fd0ea35-4297-4c56-8825-b3661586ce3c": {
+          "type": "text",
+          "settings": {
+            "blog": "news\/lorem-ipsum-is-simply-dummy-text-of-the-printing-2"
+          }
+        },
+        "9ae0b282-54d9-49cf-a0f3-0bcd9e570698": {
+          "type": "text",
+          "settings": {
+            "blog": "news\/lorem-ipsum-is-simply-dummy-test-of-the-printing"
+          }
+        }
+      },
+      "block_order": [
+        "2e20e80c-4b1e-4728-8f11-1b35b14a0cbe",
+        "1fd0ea35-4297-4c56-8825-b3661586ce3c",
+        "9ae0b282-54d9-49cf-a0f3-0bcd9e570698"
+      ],
+      "settings": {
+        "new_blg_title": "Our Blog",
+        "left_article": "news\/lorem-ipsum-is-simply-dummy-text-of-the-printing-4",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "blog_url": "",
+        "home_page_blog_banner": "shopify:\/\/shop_images\/Frame_1009_1.png"
+      }
+    },
+    "3216cd75-d488-470f-b5ef-721b4820a0d5": {
+      "type": "newslettter",
+      "settings": {
+        "nwsltr_title": "SUBSCRIBE TO OUR NEWSLETTER",
+        "nwsltr_sub": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Ipsum is simply dummy text of the printing",
+        "nwsltr_img": "shopify:\/\/shop_images\/jakob-owens-TA-aFfdoi7Y-unsplash_1_1.jpg"
+      }
+    }
+  },
+  "order": [
+    "e9c3cf8b-f09d-430a-ac37-f68526563551",
+    "dd483a70-936e-4b85-876f-ec7775ec8bf3",
+    "image_banner",
+    "featured_collection",
+    "0d817ca3-0d3b-4fbc-80dc-ec0f86f48825",
+    "fcda9f88-a7c7-43d6-ad5f-8a70af85e5e9",
+    "e7758c7d-b0be-472a-863e-98960bcf62e7",
+    "ab8b5648-c6b4-4d3b-8d26-e685af534196",
+    "c964e1ea-20af-4297-bec2-c75269cdc72d",
+    "05063734-7c9c-42d8-91db-9b751ca9bff9",
+    "e785c810-23fe-4b87-9923-39d6aacd6415",
+    "3216cd75-d488-470f-b5ef-721b4820a0d5"
+  ]
+}

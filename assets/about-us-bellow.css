@@ -1,0 +1,57 @@
+.abt-us-bellow{
+    height: auto;
+}
+
+.abt-us-bellow-txt{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* .abt-hlp-title{
+    font-family: "Harmonia Sans W01 Regular";
+    font-weight: 700;
+    font-size: 38px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    color: #F5F5F5 !important;
+    line-height: 66px;
+} */
+
+.abt-hlp-title{
+    margin-top: 0px;
+}
+
+.abt-hlp-subtxt{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    max-width: 480px;
+    /* text-align: center; */
+    color: #C7C7C7 !important;
+    line-height: 30px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+.abt-hlp-link{
+    text-decoration: none;
+    font-family: "Harmonia Sans W01 Regular";
+    font-weight: 700;
+    font-size: 18px;
+    color: #F5F5F5 !important;
+}
+
+@media screen and (max-width: 599px) {
+    .abt-hlp-subtxt{
+        font-size: 16px;
+    }
+    .abt-hlp-link{
+        font-size: 16px;
+    }
+}

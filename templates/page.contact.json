@@ -1,0 +1,38 @@
+{
+  "sections": {
+    "7f6ecced-8fbb-46d5-a507-799db09907f7": {
+      "type": "about-us-banner",
+      "settings": {
+        "abt_us_help_banner": "shopify:\/\/shop_images\/il_794xN.3721899471_51p2.jpg",
+        "abt_us_help_title": "CONTACT US",
+        "mt": 0,
+        "mb": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "contact_from_heading": "Send Us a Message",
+        "contact_from_para": "Want to get in touch with us? Just fill out the form below and we'll get back to you as soon as possible."
+      }
+    }
+  },
+  "order": [
+    "7f6ecced-8fbb-46d5-a507-799db09907f7",
+    "main",
+    "form"
+  ]
+}

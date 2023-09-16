@@ -1,0 +1,50 @@
+{{ "about-us-image.css" | asset_url | stylesheet_tag }}
+
+<div class="about-us-img-contain ">
+    <div class="page-width">
+        <div class="about-us-img-grid">
+            <div class="abt-img-container">
+                {% render 'image', imageSrc: section.settings.about_us_image, classes: 'about-img-banner' %}
+            </div>
+            <div class="txt-container">
+                <h2 class="abt-hlp-headtxt abt-head-title"> 
+                    {{ section.settings.abt_us_grid_headtxt }}
+                </h2>
+                <p class="abt-us-grid-paratxt">
+                
+                   {{ section.settings.abt_us_grid_title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+{
+    "name": "about us image grid",
+    "settings": [
+    {
+        "type": "image_picker",
+        "id": "about_us_image",
+        "label": "Choose about us Image"
+    },
+    {
+        "type": "text",
+        "id": "abt_us_grid_headtxt",
+        "label": "Choose about us grid heading"
+    }, 
+    {
+        "type": "text",
+        "id": "abt_us_grid_title",
+        "label": "Choose abt_us_grid title"
+    }
+    ],
+
+    "presets": [
+    {
+        "name": "about us image grid"
+    }
+    ]
+}
+{% endschema %}

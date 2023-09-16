@@ -1,0 +1,36 @@
+{{ "login-page-banner.css" | asset_url | stylesheet_tag }}
+
+<div class="login-page-container">
+     {% comment %} <h1 class="login-page-title">{{section.settings.login_title}}</h1> {% endcomment %}
+     {% comment %} check for the id in the url {% endcomment %}
+    {% assign id = request.path | split: '/' | last %}
+    {% case id %}
+    {% when 'recover' %}  
+        <p>recover</p>
+    {% when 'login' %}  
+        <p>login</p>
+    {% else %}
+        <p>ID is invalid</p>
+    {% endcase %}
+</div>
+
+
+{% schema %}
+    {
+        "name": "Account Banner",
+        "settings": [ 
+        {
+            "type": "text",
+            "id": "login_title",
+            "label": "Choose about us help title",
+            "default": "LOGIN"
+        }
+    ],
+    
+        "presets": [
+        {
+            "name": "login banner"
+        }
+    ]
+    }
+{% endschema %}

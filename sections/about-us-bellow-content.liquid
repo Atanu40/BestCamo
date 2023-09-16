@@ -1,0 +1,73 @@
+{{ "about-us-bellow.css" | asset_url | stylesheet_tag }}
+<style>
+  .abt-hlp-sec {
+    background-color: {{ section.settings.bg-color-about-us-bellow }}
+  }
+
+  .abt-us-bellow-txt{
+    padding-top: {{ section.settings.pt }}px;
+    padding-bottom: {{ section.settings.pb }}px;
+  }
+</style>
+<div class="abt-hlp-sec">
+  <div class="page-width">
+     <div class="abt-us-bellow">
+        <div class="abt-us-bellow-txt">
+          <h2 class="abt-hlp-headtxt abt-hlp-title">{{ section.settings.abt_us_bellow_title }}</h2>
+          <p class="abt-hlp-subtxt">{{ section.settings.abt_us_bellow_para }}</p>
+          <a class="abt-hlp-link" href="mailto:{{ block.settings.anchor_link_2 }}">{{ section.settings.anchor_link_level }}</a>
+        </div>
+     </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "About us bellow banner",
+    "settings": [
+      {
+        "type": "text",
+        "id": "abt_us_bellow_title",
+        "label": "Choose about us bellow title"
+      }, {
+        "type": "text",
+        "id": "abt_us_bellow_para",
+        "label": "Choose about us bellow paragraph"
+      }, {
+        "type": "range",
+        "id": "pt",
+        "label": "Padding Top",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "default": 0
+      }, {
+        "type": "range",
+        "id": "pb",
+        "label": "Padding Bottom",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "default": 0
+      },{
+      "type": "color",
+       "id": "bg-color-about-us-bellow",
+      "label":"Pick Background Color",
+      "default": "#231D17"
+     },{
+        "type": "url",
+         "id": "anchor_link_2",
+        "label": "About us bellow anchor link"
+    },{
+      "type": "text",
+         "id": "anchor_link_level",
+        "label": "About us bellow link text"
+    }
+    ],
+
+    "presets": [
+      {
+        "name": "About us bellow"
+      }
+    ]
+  }
+{% endschema %}

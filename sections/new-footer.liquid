@@ -1,0 +1,250 @@
+{{ 'new-footer.css' | asset_url | stylesheet_tag }}
+
+<hr class="ft-main-hr">
+
+<section class="new-footer section-inner-gap">
+    <div class=" page-width">
+        <div class="ft-wrapper">
+            <div class="ft-logoArea">
+                {% if section.settings.footer_logo %}
+                    {% render 'image', imageSrc: section.settings.footer_logo, classes: 'footer-logo' %}
+                {% endif %}
+            <p class="footer-txt"> {{ section.settings.footer_txt }} </p>
+            </div>
+            <div class=" ft-lft">
+                <div class="ft-links">
+                    <ul  class="footer-link">
+                        <div class="footer__content-top ">
+                            {%- if section.blocks.size > 0 -%}
+                                {%- liquid
+                                if section.blocks.size == 9
+                                    assign footer_grid_class = 'grid--3-col-tablet'
+                                elsif section.blocks.size > 6
+                                    assign footer_grid_class = 'grid--4-col-desktop'
+                                elsif section.blocks.size > 4
+                                    assign footer_grid_class = 'grid--3-col-tablet'
+                                elsif section.blocks.size == 3
+                                    assign footer_grid_class = 'col-4-grid'
+                                endif
+                                -%}
+                                <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
+                                {%- for block in section.blocks -%}
+                                    {%- if block.settings.footer1 != blank -%}
+                                    <ul class="footer-block__details-content list-unstyled footer-link-space">
+                                        <h4 class="footer-title"> {{ block.settings.footer_title }} </h4>
+                                        {%- for link in block.settings.footer1.links -%}
+                                            {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: block.settings.footer1, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                                        <li>
+                                            <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                                            {{ link.title }}
+                                            </a>
+                                        </li>
+                                        {%- endfor -%}
+                                    </ul>
+                                    {%- endif -%}
+                                {% endfor %}
+
+                                </div>
+                            {%- endif -%}
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="ft-social-hr">
+        <div class="ft-div">
+            <div class="ft-social">
+                <ul class="social-icons">
+                    <li>
+                       <a href=" {{ section.settings.fb_link }} "> {% render 'icon-facebook' %} </a>
+                    </li>
+                    <li>
+                       <a href="{{ section.settings.twt_link }} ">  {% render 'icon-twitter' %} </a>
+                    </li>
+                      <li>
+                       <a href="{{ section.settings.yt_link }} ">  {% render 'icon-youtube' %} </a>
+                    </li>
+                      <li>
+                       <a href="{{ section.settings.insta_lnk }} ">  {% render 'insta_icon' %} </a>
+                    </li>
+                </ul>
+            </div>
+
+        <div class="language-area">
+            {% if localization.available_countries.size > 1 %}
+                <localization-form>
+                    {% form 'localization' %}
+                    <div class="disclosure">
+                        <button type="button" class="disclosure__button" aria-expanded="false" aria-controls="CountryList">
+                        {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
+
+                        <svg class="curr-dropdown" aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                        </svg>
+                        </button>
+
+                        <ul id="CountryList" role="list" class="disclosure__list" hidden>
+                        {% for country in localization.available_countries %}
+                            <li class="disclosure__item" tabindex="-1">
+                            <a href="#"{% if country.iso_code == localization.country.iso_code %} aria-current="true"{% endif %} data-value="{{ country.iso_code }}">
+                                {{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+                            </a>
+                            </li>
+                        {% endfor %}
+                        </ul>
+
+                        <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
+                    </div>
+                    {% endform %}
+                </localization-form>
+            {% endif %}
+            <localization-form>
+                {% form 'localization' %}
+                <div class="disclosure">
+                    <button type="button" class="disclosure__button" aria-expanded="false" aria-controls="LanguageList">
+                    {{ localization.language.endonym_name | capitalize }}
+
+                    <svg class="curr-dropdown" aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                    </svg>
+                    </button>
+
+                    <ul id="LanguageList" role="list" class="disclosure__list" hidden>
+                    {% for language in localization.available_languages %}
+                        <li class="disclosure__item" tabindex="-1">
+                        <a href="#"{% if language.iso_code == localization.language.iso_code %} aria-current="true"{% endif %} hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}" data-value="{{ language.iso_code }}">
+                            {{ language.endonym_name | capitalize }}
+                        </a>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                    <input type="hidden" name="language_code" value="{{ localization.language.iso_code }}">
+                </div>
+                {% endform %}
+            </localization-form>
+        </div>
+        <div class="payment-methods">
+            {%- unless shop.enabled_payment_types == empty -%}
+                <span class="visuallyhidden">Supported payment methods</span>
+                <ul>
+                    {%- for type in shop.enabled_payment_types -%}
+                    <li>
+                        {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                    </li>
+                    {%- endfor -%}
+                </ul>
+            {%- endunless -%}
+        </div>
+    </div>
+</div>
+    <div class="ft-bot"> 
+        <div class="page-width">
+            <div class="ft-bot-content">
+                <p class="ft-bot-txt"> {{ section.settings.ft_bot_left }} </p>
+                <a class="ft-bot-txt" href="https://mentiscollective.com/"> {{ section.settings.ft_bot_right }} </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+    {
+        "name": "Footer",
+        "settings": [
+           
+            {
+                "type": "text",
+                "id": "footer_txt",
+                "label": "Footer Text"
+            },
+            {   
+                "type": "image_picker",
+                "id": "footer_logo",
+                "label": "Footer Logo"
+            },
+            {
+                "type": "checkbox",
+                "id": "enable_country_selector",
+                "default": true,
+                "label": "t:sections.footer.settings.enable_country_selector.label"
+            },
+            {
+                "type": "text",
+                "id": "ft_bot_left",
+                "label": "Footer Bottom Left",
+                "default": "© Copyright 2023 by Thebestcamo. All rights reserved."
+            }
+            ,
+            {
+                "type": "text",
+                "id": "ft_bot_right",
+                "label": "Footer Bottom Right",
+                "default": "Designed & developed by Mentis Collective."
+            },
+            {
+
+                "type": "url",
+                "id": "fb_link",
+                "label": "Facebook Link",
+                "default": "/"
+            },
+            {
+
+                "type": "url",
+                "id": "twt_link",
+                "label": "Twitter Link",
+                "default": "/"
+            },
+            {
+                "type": "url",
+                "id": "yt_link",
+                "label": "Youtube Link",
+                "default": "/"
+            },
+            {
+                "type": "url",
+                "id": "insta_lnk",
+                "label": "Instagram Link",
+                "default": "/"
+            }
+            
+        ],
+        "blocks": [
+            {
+               "type": "link_list",
+                "name": "t:sections.footer.blocks.link_list.name",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "default": "Quick links",
+                        "label": "t:sections.footer.blocks.link_list.settings.heading.label"
+                    },
+                    {
+                        "type": "link_list",
+                        "id": "footer1",
+                        "default": "footer",
+                        "label": "t:sections.footer.blocks.link_list.settings.menu.label",
+                        "info": "t:sections.footer.blocks.link_list.settings.menu.info"
+                    },
+                    {
+                        "type": "text",
+                        "id": "footer_title",
+                        "label": "Footer Title"
+                    }
+                ]
+
+
+            }
+        ],
+
+        "presets": [
+            {
+                "name": "New Footer"
+            }
+        ]
+    }
+{% endschema %}

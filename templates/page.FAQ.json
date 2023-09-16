@@ -1,0 +1,289 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "af987f94-d969-4b07-8274-4acf3f819641": {
+      "type": "about-us-banner",
+      "settings": {
+        "abt_us_help_banner": "shopify:\/\/shop_images\/il_794xN.3721899471_51p2.jpg",
+        "abt_us_help_title": "FAQ",
+        "mt": 0,
+        "mb": 0
+      }
+    },
+    "963631cf-5204-4224-9f3b-b576c7b6cf1d": {
+      "type": "faq",
+      "blocks": {
+        "560298ae-d948-4165-8ef9-1bb91029aedd": {
+          "type": "text",
+          "settings": {
+            "faq_item": "First FAQ",
+            "faq_custion_id": "f1"
+          }
+        },
+        "f328a9e7-5f3f-4840-9336-1496892a5957": {
+          "type": "text",
+          "settings": {
+            "faq_item": "Second FAQ",
+            "faq_custion_id": "f2"
+          }
+        }
+      },
+      "block_order": [
+        "560298ae-d948-4165-8ef9-1bb91029aedd",
+        "f328a9e7-5f3f-4840-9336-1496892a5957"
+      ],
+      "settings": {
+      }
+    },
+    "512500c9-bb93-4988-aef5-0ca1cb8aa7c0": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--18649475154208__512500c9-bb93-4988-aef5-0ca1cb8aa7c0-1682402331290dd8c7-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "<p>‘Lorem ipsum dolor sit amet, consectetur adipisici elit…’ (complete text) is dummy text that is not meant to mean anything. It is used as a placeholder in magazine layouts, for example, in order to give an impression of the finished document. The text is intentionally unintelligible so that the viewer is not distracted by the content. The language is not real Latin and even the first word ‘Lorem’ does not exist. It is said that the lorem ipsum text has been common among typesetters since the 16th century. (Source:<a href=\"https:\/\/en.wikipedia.org\/wiki\/Lorem_ipsum\" target=\"_blank\">Wikipedia.com<\/a>).<\/p>",
+            "page": ""
+          }
+        },
+        "template--18649475154208__512500c9-bb93-4988-aef5-0ca1cb8aa7c0-1682402331290dd8c7-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "<p>We often send out our newsletter with news and great offers. We will never disclose your data to third parties and you can unsubscribe from the newsletter at any time.<a href=\"https:\/\/loremnotipsum.com\/about\/newsletter\/?v=1ee0bf89c5d1\">Subscribe here<\/a>to our newsletter.<\/p>",
+            "page": ""
+          }
+        },
+        "template--18649475154208__512500c9-bb93-4988-aef5-0ca1cb8aa7c0-1682402331290dd8c7-2": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--18649475154208__512500c9-bb93-4988-aef5-0ca1cb8aa7c0-1682402331290dd8c7-3": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18649475154208__512500c9-bb93-4988-aef5-0ca1cb8aa7c0-1682402331290dd8c7-0",
+        "template--18649475154208__512500c9-bb93-4988-aef5-0ca1cb8aa7c0-1682402331290dd8c7-1",
+        "template--18649475154208__512500c9-bb93-4988-aef5-0ca1cb8aa7c0-1682402331290dd8c7-2",
+        "template--18649475154208__512500c9-bb93-4988-aef5-0ca1cb8aa7c0-1682402331290dd8c7-3"
+      ],
+      "settings": {
+        "faq_id": "f1",
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e61c58fd-b830-4f3c-8b5c-f5f1ff27bec4": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--18649475154208__e61c58fd-b830-4f3c-8b5c-f5f1ff27bec4-1682402331290dd8c7-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "<p>If you created a new account after or while ordering you can edit both addresses (for billing and shipping) in your<a href=\"https:\/\/loremnotipsum.com\/my-account\/edit-address?v=1ee0bf89c5d1\">customer account<\/a>.<\/p>",
+            "page": ""
+          }
+        },
+        "template--18649475154208__e61c58fd-b830-4f3c-8b5c-f5f1ff27bec4-1682402331290dd8c7-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "<p>We usually sell all copies of the magazines offered in our shop. Some publishers and distributors offer the retailer the option of returning any unsold magazines. However, because our range includes magazines from countries such as Australia, the USA and the United Kingdom, sending them back would involve considerable effort in terms of logistics and would also be very expensive. We therefore choose not to return any unsold magazines. At the same time, this allows us to also offer our customers older or out-of-print magazines.<\/p>",
+            "page": ""
+          }
+        },
+        "template--18649475154208__e61c58fd-b830-4f3c-8b5c-f5f1ff27bec4-1682402331290dd8c7-2": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--18649475154208__e61c58fd-b830-4f3c-8b5c-f5f1ff27bec4-1682402331290dd8c7-3": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18649475154208__e61c58fd-b830-4f3c-8b5c-f5f1ff27bec4-1682402331290dd8c7-0",
+        "template--18649475154208__e61c58fd-b830-4f3c-8b5c-f5f1ff27bec4-1682402331290dd8c7-1",
+        "template--18649475154208__e61c58fd-b830-4f3c-8b5c-f5f1ff27bec4-1682402331290dd8c7-2",
+        "template--18649475154208__e61c58fd-b830-4f3c-8b5c-f5f1ff27bec4-1682402331290dd8c7-3"
+      ],
+      "settings": {
+        "faq_id": "f2",
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "38144842-1956-48bf-9e75-55a245c0c4cf": {
+      "type": "collapsible-content",
+      "disabled": true,
+      "blocks": {
+        "template--18649475154208__38144842-1956-48bf-9e75-55a245c0c4cf-1682402331290dd8c7-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--18649475154208__38144842-1956-48bf-9e75-55a245c0c4cf-1682402331290dd8c7-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--18649475154208__38144842-1956-48bf-9e75-55a245c0c4cf-1682402331290dd8c7-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--18649475154208__38144842-1956-48bf-9e75-55a245c0c4cf-1682402331290dd8c7-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18649475154208__38144842-1956-48bf-9e75-55a245c0c4cf-1682402331290dd8c7-0",
+        "template--18649475154208__38144842-1956-48bf-9e75-55a245c0c4cf-1682402331290dd8c7-1",
+        "template--18649475154208__38144842-1956-48bf-9e75-55a245c0c4cf-1682402331290dd8c7-2",
+        "template--18649475154208__38144842-1956-48bf-9e75-55a245c0c4cf-1682402331290dd8c7-3"
+      ],
+      "settings": {
+        "faq_id": "f3",
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ca4149ed-001c-4078-8f86-54fd0badc551": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18649475154208__ca4149ed-001c-4078-8f86-54fd0badc551-1682567147aa0725a1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Can’t find an answer?",
+            "heading_size": "h1"
+          }
+        },
+        "template--18649475154208__ca4149ed-001c-4078-8f86-54fd0badc551-1682567147aa0725a1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Contact our customer support team via the contact page. Our customer representative will be in touch within 2 business days.<\/p>"
+          }
+        },
+        "template--18649475154208__ca4149ed-001c-4078-8f86-54fd0badc551-1682567147aa0725a1-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18649475154208__ca4149ed-001c-4078-8f86-54fd0badc551-1682567147aa0725a1-0",
+        "template--18649475154208__ca4149ed-001c-4078-8f86-54fd0badc551-1682567147aa0725a1-1",
+        "template--18649475154208__ca4149ed-001c-4078-8f86-54fd0badc551-1682567147aa0725a1-2"
+      ],
+      "settings": {
+        "rch_bacc": "#231d17",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "main",
+    "af987f94-d969-4b07-8274-4acf3f819641",
+    "963631cf-5204-4224-9f3b-b576c7b6cf1d",
+    "512500c9-bb93-4988-aef5-0ca1cb8aa7c0",
+    "e61c58fd-b830-4f3c-8b5c-f5f1ff27bec4",
+    "38144842-1956-48bf-9e75-55a245c0c4cf",
+    "ca4149ed-001c-4078-8f86-54fd0badc551"
+  ]
+}

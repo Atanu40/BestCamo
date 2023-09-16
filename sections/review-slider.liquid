@@ -1,0 +1,122 @@
+{{ 'review-slider.css' | asset_url | stylesheet_tag }}
+
+<style>
+    .slider-overlay{
+        background: linear-gradient(180deg, rgba(48, 70, 68, 0.2) -0.51%, rgb(0 0 255 / 60%) -12.62%), url({{ section.settings.review_banner | image_url }}),  #444B36;
+        background-blend-mode: luminosity;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<section class="customer-review section-inner-gap">
+    {% if section.settings.review_banner != null %}
+        {% comment %} {% render 'image', imageSrc: section.settings.review_banner, classes: 'review-banner' %} {% endcomment %}
+    {%else %}
+        {% comment %} {{ 'lifestyle-1' | placeholder_svg_tag: 'review-banner' }} {% endcomment %}
+    {% endif %}
+    <div class="slider-overlay"> &nbsp; </div>
+    <h2 class="section-title review-title sec-title-anim "> {{ section.settings.review_title }} </h2>
+    <div class="slider-back">
+        <div class="cus-slider page-width">
+            <div class="swiper-wrapper ">
+                {% for item in section.blocks %}
+                    <div class="swiper-slide review-slider-item">
+                        <div class="cus-inner-content ">
+                            <div class="slider-imgArea">
+                                {% if item.settings.slider_item_image != null %}
+                                    {% render 'image', imageSrc: item.settings.slider_item_image, classes: 'slider-item-img' %}
+                                {%else %}
+                                    {{ 'lifestyle-1' | placeholder_svg_tag: 'slider-item-img' }}
+                                {% endif %}
+                            </div>
+                            {% if item.settings.slider_text != blank %}
+                                <div class="review-title-area">
+                                    {% render 'top-quote' %}
+                                    <div class="bot-quote-div">
+                                        <p class="section-sub review-text"> {{ item.settings.slider_text }}  </p>
+                                        {% render 'bot-quote' %} 
+                                    </div>
+                                    <p class="review-author"> {{ item.settings.review_author }} </p>
+                                </div>
+                            {% endif %}
+                           
+                        </div>
+                    </div>
+                {% endfor %}
+                 
+            </div>
+           <div class="swiper-pagination">&nbsp;</div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var swiper2 = new Swiper(".cus-slider", {
+      slidesPerView: 2,
+      spaceBetween: 55,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+       navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints:{
+        1100:{
+          slidesPerView: 2,
+          spaceBetween: 55,
+        },
+        320:{
+          slidesPerView: 1,
+        },
+    }
+    });
+  </script>
+
+{% schema %}
+    {
+        "name": "Customer Review",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "review_banner",
+                "label": "background Image"
+            },
+            {
+                "type": "text",
+                "id": "review_title",
+                "label": "Title"
+            }
+        ],
+        "blocks": [
+            {
+                "name": "Customer Review",
+                "type": "slider",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "slider_item_image",
+                        "label": "Slider Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "slider_text",
+                        "label": "Slider Text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "review_author",
+                        "label": "Author"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Customer Review"
+            }
+        ]
+    }
+{% endschema %}

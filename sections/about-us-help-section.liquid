@@ -1,0 +1,44 @@
+{{ "about-us-help-section.css" | asset_url | stylesheet_tag }}
+<div class="abt-hlp-container section-inner-gap">
+<div class="page-width">
+    <div class="abt-hlp">
+        <div class="abt-hlp-container__body">
+            <h2 class="abt-hlp-heading">{{ section.settings.abt_us_help_heading }}</h2> 
+            <p class="abt-hlp-para">{{ section.settings.abt_us_help_title1 }}</p> 
+            <a class="abt-hlp-anchor" href="mailto:{{ section.settings.abt_us_help_email }}">{{ section.settings.abt_us_help_email }}</a>
+        </div>
+    </div>
+</div>
+</div>
+
+{% schema %}
+    {
+        "name": "About us help section",
+        "settings": [
+        {
+            "type": "text",
+            "id": "abt_us_help_heading",
+            "label": "Choose about us help heading"
+        }, 
+        {
+            "type": "text",
+            "id": "abt_us_help_title1",
+            "label": "Choose abt_us_help title1"
+        },
+
+        {
+            "type": "text",
+            "id": "abt_us_help_email",
+            "label": "Choose abt_us_help title2",
+            "default": "INFO@THEBESTCAMO.COM"
+        }
+
+        ],
+    
+        "presets": [
+        {
+            "name": "About us help section"
+        }
+        ]
+    }
+    {% endschema %}

@@ -1,0 +1,232 @@
+.arival-grid{
+    display: grid;
+    grid-template-columns: .7fr 1fr;
+    height: 422px;
+    position: relative;
+}
+
+.arival-grid::after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    left: 15px;
+    bottom: 15px;
+    /* border: .5px solid #C7C7C7; */
+    border: var(--border-line);
+    z-index: 0;
+    
+}
+
+.arival-slider-imgArea{
+    position: relative;
+    padding-bottom: 95%;
+    overflow: hidden;
+    
+}
+
+.slider-prod-anchor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.prod-slider-hov:hover .arival-slider-img{
+    transform: scale(1.03);
+}
+
+.arival-left{
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+
+}
+
+.arival-right{
+    display: grid;
+    grid-template-columns: .7fr 1fr;
+    column-gap: 20px;
+}
+
+.arival-img-1{
+    height: 84%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.arival-first-img{
+    display: flex;
+    align-items: end;
+}
+
+.arival-second-img{
+    /* display: flex;
+    justify-content: flex-end; */
+
+    position: relative;
+}
+
+.arival-img-2{
+    height: 84%;
+    width: 102%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    object-position: 100% 22%;
+}
+
+.arival-top .arival-title, .arival-top .arival-sub{
+    color: black !important;
+}
+
+.arival-title{
+    margin: 0;
+}
+
+.arival-sub{
+    margin-bottom: 28px;
+    max-width: 450px;
+}
+
+.arival-top{
+    border-top: 0.5px solid rgba(199, 199, 199, 0.5);
+    border-bottom: 0.5px solid rgba(199, 199, 199, 0.5);
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ############ slider styles starts now ###############  */
+
+.new-arival-slider{
+
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #1B1A1A;
+    /* padding: 10px; */
+}
+
+
+.new-arival-slider .swiper-pagination span{
+    color: red !important;
+}
+
+
+
+.arival-slider-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+    /* padding: 26px; */
+}
+
+.inner-slider{
+    padding: 14px;
+    border:  0.5px solid rgba(199, 199, 199, 0.5);;
+}
+.slider-border-bot{
+    position: relative;
+
+}
+.slider-border-bot::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 122px;
+    /* border-bottom: 0.5px solid rgba(199, 199, 199, 0.5); */
+
+    border-bottom: var(--border-line);
+}
+
+.swiper-button-next{
+    z-index: 2;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+    content: '';
+}
+
+.swiper-button-next svg, .swiper-button-prev svg{
+    fill: white;
+}
+
+.swiper-button-prev svg{
+    /* transform: rotate(180deg); */
+}
+
+.arival-slider-btn{
+    top: 38%;
+}
+
+.new-arival-slider {
+    position: relative;
+}
+
+.arival-slider-content{
+    
+}
+
+
+@media screen and (max-width: 1300px){
+
+    .arival-right{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    .arival-second-img{
+        display: none;
+    }
+
+     .arival-right{
+        grid-template-columns: 1fr;
+    }
+
+    .arival-grid{
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .arival-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .arival-right{
+        grid-area: 1 /1 / 1/1;
+        background-color: var(--facet-filters__sort) ;
+    }
+
+    .arival-grid::after{
+        content: none;
+    }
+
+    .arival-left{
+        padding: 16px;
+
+    }
+}

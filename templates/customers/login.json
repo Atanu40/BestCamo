@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "3bfde22b-9dab-47ec-a997-75a1dab076b4": {
+      "type": "login-page-banner",
+      "disabled": true,
+      "settings": {
+        "login_title": "LOGIN"
+      }
+    },
+    "main": {
+      "type": "main-login",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "3bfde22b-9dab-47ec-a997-75a1dab076b4",
+    "main"
+  ]
+}

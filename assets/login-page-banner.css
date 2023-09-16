@@ -1,0 +1,15 @@
+.login-page-container{
+    background-color: var(--coll-bg-color);
+    text-align: center;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page-title{
+    font-family: "dreamwalker";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+}

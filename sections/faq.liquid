@@ -1,0 +1,136 @@
+{{ 'faq.css' | asset_url | stylesheet_tag }}
+
+
+<div class="faq-links-body">
+    <div class="faq-links ">
+        {% for item in section.blocks %}
+            <a href="#{{ item.settings.faq_custion_id }}"  class="faq-items" >{{ item.settings.faq_item }}</a>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+<div class="faq-mob-tabs display-none ">
+    {% for item in section.blocks %}
+        <a href="#{{ item.settings.faq_custion_id }}"  class="faq-tabs-items  btn-primary" >{{ item.settings.faq_item }}</a>
+    {% endfor %}
+</div>
+
+
+<script>
+   
+    //this function is for the sticky behavior of the faq links
+    function faqDiv() {
+        var faq_Bodies = document.querySelectorAll('.faq-body');
+        var totalHeight = 0;
+
+        // Loop through the faqBodies and add up their heights
+        for (var i = 0; i < 3; i++) {
+        totalHeight += faq_Bodies[i].offsetHeight;
+        }
+
+        // Set the height of .faq-links-body to the total height
+        var faqLinksBody = document.querySelector('.faq-links-body');
+        faqLinksBody.style.height = totalHeight-100 + 'px';
+    }
+
+
+        // Variables for sticky menu
+    var faqLinks = document.querySelector('.faq-links');
+    var faqLinksTop = faqLinks.offsetTop;
+
+    // Function to make menu sticky
+      function makeSticky() {   
+        if ((window.scrollY) + 238 >= faqLinksTop ) {
+            faqLinks.classList.add('fixed');
+        }
+        else {
+            faqLinks.classList.remove('fixed');
+        }
+    }  
+
+
+
+    // Event listener for scrolling
+    window.addEventListener('scroll', function(){
+        makeSticky();
+        faqDiv();
+    } );
+
+    var faqItems = document.querySelectorAll('.faq-items');
+    faqItems[0].classList.add('faq-active');
+
+    // Intersection observer options
+    const options = {
+        root: null,
+        rootMargin: '-330px',
+        threshold: .25
+    };
+
+    // Intersection observer for FAQ items
+   function faqItemsObserver() {
+        const faqBodies = document.querySelectorAll('.faq-body');
+       
+        const faqItems = document.querySelectorAll('.faq-items');
+        const observer = new IntersectionObserver(entries => {
+       
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    console.log(entry.target.getAttribute('id'));
+                    const id = entry.target.getAttribute('id');
+                    const faqItem = document.querySelector(`.faq-items[href="#${id}"]`);
+                  
+                    // Remove active class from all FAQ items
+                    faqItems.forEach(faqItem => {
+                        faqItem.classList.remove('faq-active');
+                    });
+                    // Add active class to FAQ item corresponding to the intersecting body
+                    faqItem.classList.add('faq-active');
+                }
+            });
+        }, options);
+        faqBodies.forEach(faqBody => {
+            observer.observe(faqBody);
+        });
+    }
+
+    window.addEventListener('scroll', function(){
+        faqItemsObserver();
+    } );
+
+
+</script>
+
+{% schema %}
+    {
+        "name": "FAQ First Section",
+        "blocks": [
+            {
+                "type": "text",
+                "name": "FAQ Option",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "faq_item",
+                        "label": "FAQ Item",
+                        "default": "FAQ Item"
+                    },
+                    {
+                        "type": "text",
+                        "id": "faq_custion_id",
+                        "label": "FAQ Custom ID",
+                        "info": "this id must be simillar to the id of the link in the Collapsible Content section"
+                    }
+                ]
+            }
+        ],
+       
+        "presets": [
+            {
+                "name": "FAQ First Section"
+            }
+        ]
+        
+    }
+{% endschema %}

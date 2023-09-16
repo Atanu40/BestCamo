@@ -1,0 +1,66 @@
+{{ "blog-section.css" | asset_url | stylesheet_tag }}
+<style>
+  .blog-banner-parent {
+    margin-top: {{ section.settings.mt }}px;
+    margin-bottom: {{ section.settings.mb }}px;
+  }
+</style>
+<section class="blog-banner-parent">
+  <div class="page-width">
+    <div class="blog-banner">
+        <div class="blog-banner__image">
+          {% if section.settings.blog_img != null %}
+            {% render 'image', imageSrc: section.settings.blog_img, classes: 'blg-banner' %}
+          {% else %}
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'section03__img' }}
+          {% endif %}
+
+          {%if section.settings.blog_banner_title != blank%}
+            <h2 class="blog-banner__title">{{ section.settings.blog_banner_title }}</h2>
+          {% else %}
+          <h2 class="blog-banner__title">{{ blog.title }}</h2>
+          {% endif %}
+          <div class="overlay">&nbsp;</div>
+        </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "blog-banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "blog_img",
+        "label": "Choose blog section hero Image"
+      }, {
+        "type": "text",
+        "id": "blog_banner_title",
+        "label": "Choose banner_title"
+      },
+      {
+        "type": "range",
+        "id": "mt",
+        "label": "Margin Top",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "default": 0
+      }, {
+        "type": "range",
+        "id": "mb",
+        "label": "Margin Bottom",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "default": 0
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "Blog section Banner"
+      }
+    ]
+  }
+{% endschema %}

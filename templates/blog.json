@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "175cc1c6-46f3-401a-8fc7-8ed15cdc2d1d": {
+      "type": "blog-banner",
+      "settings": {
+        "blog_img": "shopify:\/\/shop_images\/il_794xN.3721899471_51p2.jpg",
+        "blog_banner_title": "",
+        "mt": 0,
+        "mb": 0
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": true,
+        "padding_top": 52,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "175cc1c6-46f3-401a-8fc7-8ed15cdc2d1d",
+    "main"
+  ]
+}

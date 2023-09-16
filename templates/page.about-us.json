@@ -1,0 +1,127 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "e957ec3e-3f5f-4b7f-91b2-2c7ca66ade6f": {
+      "type": "about-us-banner",
+      "settings": {
+        "abt_us_help_banner": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_1.jpg",
+        "abt_us_help_title": "About Us",
+        "mt": 0,
+        "mb": 55
+      }
+    },
+    "053350d9-d3dc-4ec2-b2fa-4d5695b0819f": {
+      "type": "about-us-image",
+      "settings": {
+        "about_us_image": "shopify:\/\/shop_images\/b.jpg",
+        "abt_us_grid_headtxt": "About Us",
+        "abt_us_grid_title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only"
+      }
+    },
+    "c7495b17-56c2-4e03-aade-81064e8937d0": {
+      "type": "about-us-img-card",
+      "blocks": {
+        "4c5040b1-1a61-455b-805a-ed5a45448811": {
+          "type": "abt-img-card",
+          "settings": {
+            "about_us_image_card": "shopify:\/\/shop_images\/roadtrips-lst-mens-1_1200x1200_1.jpg",
+            "about_us_image_card_headtxt": "Gary",
+            "about_us_image_card_title": "Journalist"
+          }
+        },
+        "4cd985a5-9227-481a-80a1-061504d91dce": {
+          "type": "abt-img-card",
+          "settings": {
+            "about_us_image_card": "shopify:\/\/shop_images\/DALL_E_2023-03-20_09.26.49_-_a_bearded_man_standing_in_a_forest_wearing_tshirt_1.jpg",
+            "about_us_image_card_headtxt": "Terry",
+            "about_us_image_card_title": "Designer"
+          }
+        },
+        "3e9b8615-1d8a-43f9-b593-6c1d3750c254": {
+          "type": "abt-img-card",
+          "settings": {
+            "about_us_image_card": "shopify:\/\/shop_images\/jakob-owens-lkMJcGDZLVs-unsplash_1_1.jpg",
+            "about_us_image_card_headtxt": "Merry",
+            "about_us_image_card_title": "CEO"
+          }
+        }
+      },
+      "block_order": [
+        "4c5040b1-1a61-455b-805a-ed5a45448811",
+        "4cd985a5-9227-481a-80a1-061504d91dce",
+        "3e9b8615-1d8a-43f9-b593-6c1d3750c254"
+      ],
+      "settings": {
+        "about_title": "Our team"
+      }
+    },
+    "6007e8d8-8f4f-46f1-bde0-edf10fe49124": {
+      "type": "about-us-bellow-content",
+      "settings": {
+        "abt_us_bellow_title": "How can we help?",
+        "abt_us_bellow_para": "Let us know your questions, thoughts and ideas via the email below. Our support team will get back to you as soon as possible.",
+        "pt": 35,
+        "pb": 40,
+        "bg-color-about-us-bellow": "#231d17",
+        "anchor_link_2": "",
+        "anchor_link_level": "INFO@THEBESTCAMO.COM"
+      }
+    },
+    "a20809a0-362d-4517-b152-2b436961391c": {
+      "type": "collection-list",
+      "disabled": true,
+      "blocks": {
+        "template--19252879589664__a20809a0-362d-4517-b152-2b436961391c-168663941371f8f695-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--19252879589664__a20809a0-362d-4517-b152-2b436961391c-168663941371f8f695-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--19252879589664__a20809a0-362d-4517-b152-2b436961391c-168663941371f8f695-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19252879589664__a20809a0-362d-4517-b152-2b436961391c-168663941371f8f695-0",
+        "template--19252879589664__a20809a0-362d-4517-b152-2b436961391c-168663941371f8f695-1",
+        "template--19252879589664__a20809a0-362d-4517-b152-2b436961391c-168663941371f8f695-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e957ec3e-3f5f-4b7f-91b2-2c7ca66ade6f",
+    "053350d9-d3dc-4ec2-b2fa-4d5695b0819f",
+    "c7495b17-56c2-4e03-aade-81064e8937d0",
+    "6007e8d8-8f4f-46f1-bde0-edf10fe49124",
+    "a20809a0-362d-4517-b152-2b436961391c"
+  ]
+}

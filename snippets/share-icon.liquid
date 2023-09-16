@@ -1,0 +1,29 @@
+{{ 'icon-sharing.css' | asset_url | stylesheet_tag }}
+
+<hr class="article-template__content page-width page-width--narrow rte">
+
+<div class="sharing social-links">
+  <span class="sharing-label">SHARE:</span>
+  <div class="sharing-list">
+    <div class="facebook">
+      <a class="sharing-link" target="_blank" rel="noopener" href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}">
+        <span class="social-link-span" aria-hidden="true">{% render 'icon-facebook' %} Facebook </span>
+        <span class="visually-hidden">{{ 'general.social.share_on_facebook' | t }}</span>
+      </a>
+    </div>
+    <div class="twitter">
+      <a class="sharing-link" target="_blank" rel="noopener" href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}">
+        <span class="social-link-span" aria-hidden="true">{% render 'icon-twitter' %} Twitter </span>
+        <span class="visually-hidden">{{ 'general.social.share_on_twitter' | t }}</span>
+      </a>
+    </div>
+    {% if share_image %}
+    <div class="pinterest">
+      <a class="sharing-link" target="_blank" rel="noopener" href="//pinterest.com/pin/create/button/?url={{ shop.url | append: share_permalink }}&amp;media={{ share_image | img_url: '1024x1024' }}&amp;description={{ share_title | url_param_escape }}">
+        <span class="social-link-span" aria-hidden="true">{% render 'icon-pinterest' %} Pinterest </span>
+        <span class="visually-hidden">{{ 'general.social.share_on_pinterest' | t }}</span>
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</div>

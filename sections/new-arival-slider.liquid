@@ -1,0 +1,228 @@
+{{ 'new-arival-slider.css' | asset_url | stylesheet_tag }}
+
+<style>
+    .arival{
+        background-color: {{ section.settings.arival_bg_color }};
+    }
+    .arival-grid{
+        background-color: {{ section.settings.ariva_grid_color }};
+    }
+</style>
+
+<section class="arival ">
+    <div class="arival-top">
+        <div class="page-width">
+            <div class="arival-grid">
+                <div class="arival-left">
+                    {% if section.settings.arival_title != blank %}
+                        <h2 class="section-title arival-title sec-title-anim"> {{ section.settings.arival_title }} </h2>
+                    {% endif %}
+                    {% if section.settings.arival_sub != blank %}
+                            <p class="section-sub arival-sub"> {{ section.settings.arival_sub }} </p>
+                    {% endif %}
+                    {% if section.settings.arival_btn_txt != blank %}
+                            <a class="btn btn-secondary" href=" {{ section.settings.arival_url }} "> {{ section.settings.arival_btn_txt }} {% render 'arr-right-cus' %} </a>
+                    {% endif %}
+                </div>
+                <div class="arival-right">
+                    <div class="arival-first-img">
+                        {% if section.settings.arival_img1 != null %}
+                            {% render 'image', imageSrc: section.settings.arival_img1, classes: 'arival-img-1' %}
+                        {% else %}
+                            {{ 'lifestyle-1' | placeholder_svg_tag: 'hero-banner' }}
+                        {% endif %}
+                    </div>
+                    <div class="arival-second-img">
+                        {% if section.settings.arival_img2 != null %}
+                            {% render 'image', imageSrc: section.settings.arival_img2, classes: 'arival-img-2' %}
+                        {% else %}
+                            {{ 'lifestyle-1' | placeholder_svg_tag: 'hero-banner' }}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+  <div class="slider-border-bot">
+      <div class="new-arival-slider page-width ">
+        <div class="swiper mySwiper section-bottom-gap ">
+            <div class="swiper-wrapper">
+                {% for item in section.blocks %}
+                    <div class="swiper-slide">
+                        <div class="inner-slider prod-slider-hov staggering">
+                            <a class="slider-prod-anchor" href="{{ item.settings.product.url }} "> &nbsp; </a>
+                            <div class="arival-slider-imgArea">
+                                {% if item.settings.product.featured_image != null %}
+                                    {% render 'image', imageSrc: item.settings.product.featured_image, classes: 'arival-slider-img' %}
+                                {% else %}
+                                    {{ 'product-1' | placeholder_svg_tag: 'arival-slider-img' }}
+                                {% endif %}
+                            </div>
+                            <div class="arival-slider-content">
+                                <h3 class="arival-slider-title product-title"> {{ item.settings.product.title }} </h3>
+                                <p class="arival-slider-sub"> {{ item.settings.product.sub_title }} </p>
+                                <p class="product-price" >
+                                    From
+                                    {% if item.settings.product.variants.size > 1 %}
+                                        {% assign lowest_price = item.settings.product.variants[0].price %}
+                                        {% for variant in item.settings.product.variants %}
+                                            {% if variant.price < lowest_price %}
+                                                {% assign lowest_price = variant.price %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        {{ lowest_price | money }}
+                                    {% else %}
+                                        {{ item.settings.product.price | money }}
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            
+            {% comment %} <div class="swiper-pagination">&nbsp;</div> {% endcomment %}
+        </div>
+        <div class="swiper-button-next arival-slider-btn"> {% render 'arr-right' %} </div>
+        <div class="swiper-button-prev arival-slider-btn">{% render 'arr-left' %}</div>
+    </div>
+</div>
+</section>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 15,
+      {% comment %} pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }, {% endcomment %}
+       navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        480: {
+          slidesPerView: 2,
+         
+        },
+        640: {
+          slidesPerView: 3,
+          
+        },
+        768: {
+          slidesPerView: 4,
+          
+        },
+      },
+    });
+
+    function setHeight() {
+        var cards = document.querySelectorAll('.inner-slider');
+        // get the height of the tallest card
+        var maxHeight = 0;
+        for (var i = 0; i < cards.length; i++) {
+            if (cards[i].offsetHeight > maxHeight) {
+                maxHeight = cards[i].offsetHeight;
+            }
+        }
+
+        for (var i = 0; i < cards.length; i++) {
+            
+            //check screen size and set height on 768px
+            if (window.matchMedia("(min-width: 1320px)").matches && window.matchMedia("(max-width: 1399px)").matches) {
+                cards[i].style.height = maxHeight  + 'px';
+                console.log('height set for 1250 and 1399');
+            } else {
+                cards[i].style.height = maxHeight - 20 + 'px';
+                console.log('height set for rest of the screen');
+            }
+
+           
+        }
+    }
+   setHeight();
+    
+</script>
+ 
+
+{% schema %}
+    {
+        
+        "name": "New Arival Slider",
+        "settings": [
+            {
+                "type": "text",
+                "id": "arival_title",
+                "label": "Title"
+            },
+            {
+                "type": "text",
+                "id": "arival_sub",
+                "label": "Sub Title"
+            },
+            {
+                "type": "text",
+                "id": "arival_btn_txt",
+                "label": "Button Text"
+            },
+            {
+                "type": "url",
+                "id": "arival_url",
+                "label": "Button URL"
+            },
+            {
+                "type": "image_picker",
+                "id": "arival_img1",
+                "label": "Image 1"
+            },
+            {
+                "type": "image_picker",
+                "id": "arival_img2",
+                "label": "Image 2"
+            },
+            {
+                "type": "header",
+                "content": "Product Slider"
+            },
+            {
+                "type": "collection",
+                "id": "collection",
+                "label": "Collection"
+            },
+            {
+                "type": "color",
+                "id": "arival_bg_color",
+                "label": "Section Background Color"
+            },
+            {
+                "type": "color",
+                "id": "ariva_grid_color",
+                "label": "Grid Background Color"
+            }
+        ],
+        "blocks": [
+            {   
+                "type": "produt",
+                "name": "New Arival Slider",
+                "settings": [
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "Product"
+                    }
+                ]
+            }
+        ],
+      
+        "presets": [
+            {
+                "name": "New Arival Slider"
+            }
+        ]
+    }
+{% endschema %}

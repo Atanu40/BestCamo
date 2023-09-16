@@ -1,0 +1,80 @@
+{{ 'our-category.css' | asset_url | stylesheet_tag }}
+
+<section class="category section-inner-gap">
+  <div class="page-width">
+    <h2 class="section-title cat-title sec-title-anim">
+      {{ section.settings.cat_title }}
+    </h2>
+    <div class="category-grid">
+      <div class="category-left">
+        {% if section.settings.cat_img != null %}
+          {% render 'image', imageSrc: section.settings.cat_img, classes: 'cat_img cat-img-anim'  %}
+        {% else %}
+          {{ 'product-1' | placeholder_svg_tag: 'cat_img' }}
+        {% endif %}
+      </div>
+      <div class="category-right">
+        {% for item in section.blocks %}
+          <a class="category-content-txt cat-content-anim " href=" {{ item.settings.cat_url }} ">
+            <div class="category-content">
+              <div class="category-inner-content {{ item.settings.card_class }}">
+                <div class="gradiant-img">&nbsp;</div>
+                {% render 'image', imageSrc: item.settings.sml_img, classes: 'sml-img' %}
+                <h2 class="cat-txt card-title"> {{ item.settings.cat_text }}</h2>
+              </div>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Category",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "cat_img",
+        "label": "Category Image"
+      }, {
+        "type": "text",
+        "id": "cat_title",
+        "label": "Category Title"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Category Text",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "sml_img",
+            "label": "Small Image"
+          }, {
+            "type": "text",
+            "id": "cat_text",
+            "label": "Category Text"
+          }, {
+            "type": "text",
+            "id": "card_class",
+            "label": "Category Class Name",
+            "info": "Add class name. Example: card-margin-left/ card-no-margin"
+          }, {
+            "type": "url",
+            "id": "cat_url",
+            "label": "Category URL",
+            "default": "/"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Our Category"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,59 @@
+{{ "about-us-banner.css" | asset_url | stylesheet_tag }}
+<style>
+  .abt-us-banner-container {
+    margin-top: {{ section.settings.mt }}px;
+    margin-bottom: {{ section.settings.mb }}px;
+  }
+</style>
+
+<div class="abt-us-banner-container">
+  <div class="page-width">
+     <div class="abt-us-banner">
+        <div class="abt-us-banner-img">
+            {% render 'image', imageSrc: section.settings.abt_us_help_banner, classes: 'abt-us-img' %}
+            <h2 class="page-title">{{ section.settings.abt_us_help_title}}</h2>
+          <div class="overlay">&nbsp;</div>
+        </div>
+     </div>
+  </div>
+</div>
+
+{% schema %}
+    {
+        "name": "About us help banner",
+        "settings": [
+        {
+            "type": "image_picker",
+            "id": "abt_us_help_banner",
+            "label": "Choose about us help banner"
+        }, 
+        {
+            "type": "text",
+            "id": "abt_us_help_title",
+            "label": "Choose about us help title"
+        },{
+        "type": "range",
+        "id": "mt",
+        "label": "Margin Top",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "default": 0
+      },{
+        "type": "range",
+        "id": "mb",
+        "label": "Margin Bottom",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "default": 0
+      }
+    ],
+    
+        "presets": [
+        {
+            "name": "About us banner"
+        }
+    ]
+    }
+{% endschema %}

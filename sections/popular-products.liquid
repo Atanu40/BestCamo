@@ -1,0 +1,116 @@
+{{ 'popular-products.css' | asset_url | stylesheet_tag }}
+
+<style>
+    .pop-backgroud{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+        object-fit: cover;
+        -webkit-user-drag: none; /* Safari */
+        background-blend-mode: multiply, normal, normal;
+        {% comment %} background: linear-gradient(180deg, rgba(0, 0, 0, 0) 28.49%, rgba(0, 0, 0, 0.7) 128.38%), url({{ section.settings.pop_background }}), #161515; {% endcomment %}
+    }
+
+    .pop-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) -46.51%, rgb(0 0 0 / 70%) 9.38%), url({{ section.settings.pop_background | image_url }}), #161515;
+        background-blend-mode: luminosity;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<section class="pop-prod section-inner-gap">
+     {% comment %} {% render 'image', imageSrc: section.settings.pop_background, classes: 'pop-backgroud' %} {% endcomment %}
+     {% comment %} {% assign pop_back = section.settings.pop_background %} {% endcomment %}
+
+     <div class="pop-overlay"> &nbsp; </div>
+    <div class="page-width" style="z-index: 2; position: relative;">
+        <h2 class="section-title pop-title sec-title-anim"> {{ section.settings.pop_title }} </h2>
+        <p class="section-sub pop-sub"> {{ section.settings.pop_txt }} </p>
+
+        <div class="pop-prod__grid">
+            {% for block in section.blocks %}
+                {% assign product = block.settings.product %}
+                {% if product != blank %}
+                    <div class="pop-prod__item staggering">
+                        <a class="prd-grid-wrap" href="{{ product.url }}"> &nbsp; </a>
+                            <div class="pop-imgArea">
+                                {% render 'image', imageSrc: product.featured_image, classes: 'pop-img' %}
+                            </div>
+                        <div class="pop-prod__item__info">
+                            <hr class="prod-hr">
+                            <a class=" pop-prod-title" href="{{ product.url }}">
+                                <h3 class="product-title">{{ product.title }}</h3>
+                            </a>
+                            <p>{{ product.price | money }}</p>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="pop-prod">
+            <a class="btn btn-primary pop-prod-btn" href=" {{ section.settings.btn_url }} ">{{ section.settings.btn_text }} {% render 'arr-right-cus' %} </a> 
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "Popular Products",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "pop_background",
+                "label": "Background Image"
+            },
+            {
+                "type": "text",
+                "id": "pop_title",
+                "label": "Title"
+            },
+            {
+                "type": "text",
+                "id": "pop_txt",
+                "label": "Text"
+            },
+
+            {
+                "type": "text",
+                "id": "btn_text",
+                "label": "Button Text"
+            },
+            {
+                "type": "url",
+                "id": "btn_url",
+                "label": "Button URL"
+            }
+           
+        ],
+        "blocks":[
+            {
+                "type": "product",
+                "name": "Product",
+                "settings": [
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "Product"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Popular Products"
+            }
+        ]
+    }
+{% endschema %}

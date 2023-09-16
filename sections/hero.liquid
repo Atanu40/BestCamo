@@ -1,0 +1,84 @@
+{{ 'hero.css' | asset_url | stylesheet_tag }}
+
+<section class="hero">
+    {% if section.settings.hero_banner != null %}
+        {% render 'image', imageSrc: section.settings.hero_banner, classes: 'hero-banner' %}
+    {%else %}
+        {{ 'lifestyle-1' | placeholder_svg_tag: 'hero-banner' }}
+    {% endif %}
+    
+    <div class="overlay"> &nbsp; </div>
+    <div class="page-width hero-content">
+        <div class="hero-left">
+            <div class="hero-text-content hero-content-anim">
+            {% if section.settings.hero_title != blank %}
+                <h1 class="hero-title"> {{ section.settings.hero_title }} </h1>
+            {% endif %}
+            {% if section.settings.hero_sub != blank %}
+                <p class="hero-sub">{{ section.settings.hero_sub }}</p>
+            {% endif %}
+                <a class="btn btn-primary hero-btn" href=" {{ section.settings.btn_url }} ">{{ section.settings.btn_text }} {% render 'arr-right-cus' %} </a> 
+            </div>
+        </div>
+        <div class="hero-right">
+            <hr class="hr-line">
+            <div class="hero-img-area-1">
+                {% render 'image', imageSrc: section.settings.hero_img1, classes: 'hero-img-1 hero-img-anim' %}
+            </div>
+            <div class="hero-img-area-2">
+                 {% render 'image', imageSrc: section.settings.hero_img2, classes: 'hero-img-2 hero-img-anim' %}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+    {
+        "name": "Hero",
+        "settings": [
+             {
+                "type": "image_picker",
+                "id": "hero_banner",
+                "label": "Hero Banner"
+            },
+            {
+                "type": "image_picker",
+                "id": "hero_img1",
+                "label": "First Hero Image"
+            },
+            {
+                "type": "image_picker",
+                "id": "hero_img2",
+                "label": "Second Hero Image"
+            },
+            {
+                "type": "text",
+                "id": "hero_title",
+                "label": "Hero Title"
+            },
+            {
+                "type": "text",
+                "id": "hero_sub",
+                "label": "Hero Subtitle"
+            },
+            {
+                "type": "text",
+                "id": "btn_text",
+                "label": "Button Text"
+            },
+            {
+                "type": "url",
+                "id": "btn_url",
+                "label": "Button URL"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Hero"
+            }
+        ]
+        
+    }
+{% endschema %}

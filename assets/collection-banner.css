@@ -1,0 +1,103 @@
+.col-banner{
+    background-color: var(--coll-bg-color);
+}
+
+.col-banner-content{
+    height: 36vh;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-banner-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.col-banner-title{
+    margin-top: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.col-banner-content::after{
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    z-index: 1;
+    border: var(--border-line);
+}
+
+
+.collection-background{
+    background-color:#231D17;
+}
+
+.facet-background{
+    background-color: var(--dark-bg-color);
+    padding: 10px;
+}
+
+
+.collection-prod-wrapper{
+    padding: 16px;
+    position: relative;
+    z-index: 2;
+    background-color: var(--dark-bg-color) ;
+}
+
+.collection-prod-wrapper::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border: var(--border-line);
+}
+
+.facets-vertical-sort{
+    background-color: var(--facet-filters__sort);
+    padding: 14px;
+}
+
+.collection-prod-wrapper .card__information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.collection-prod-wrapper .card-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.collection-prod-wrapper a{
+    font-family: "Harmonia Sans W01 Regular";
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .col-banner-content{
+        height: 22vh;
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .col-banner-content{
+        /* height: 22vh; */
+    }  
+}

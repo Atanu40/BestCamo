@@ -1,0 +1,74 @@
+{{ "blog-details-banner.css" | asset_url | stylesheet_tag }}
+
+<style>
+  .blog-details-banner-parent {
+    margin-top: {{ section.settings.mt }}px;
+    margin-bottom: {{ section.settings.mb }}px;
+  }
+</style>
+
+
+<div class="blog-details-banner-parent">
+  <div class="page-width">
+    <div class="blog-details-banner">
+      <div class="blog-details-banner__contn ">
+        <div class="blog-details__link"> 
+          <a class="blog-details__anchor" href="{{ blog.url }}">{% render 'arr-right-cus' %}</a>
+          <a class="blog-details__anchor1" href="{{ blog.url }}">Back to blog</a>
+        </div>
+        
+        {% if section.settings.blog-details_img != null %}
+          {% render 'image', imageSrc: section.settings.blog-details_img, classes: 'blog-img' %}
+        {% else %}
+          {{ 'lifestyle-1' | placeholder_svg_tag: 'section03__img' }}
+        {% endif %}
+        <div class="overlay">
+          &nbsp;
+        </div>
+        <div class="blog-titles page-width page-width--narrow">
+          <h2 class="blog__title">{{ article.title }}</h2>
+
+          <p class="blog__author">{{ article.author }}</p>
+
+          <p class="blog__date">{{ article.published_at }}</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "blog-details-banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "blog-details_img",
+        "label": "Choose blog-details section hero Image"
+      }, {
+        "type": "range",
+        "id": "mt",
+        "label": "Margin Top",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "default": 0
+      }, {
+        "type": "range",
+        "id": "mb",
+        "label": "Margin Bottom",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "default": 0
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "blog details section"
+      }
+    ]
+  }
+{% endschema %}

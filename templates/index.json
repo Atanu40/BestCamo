@@ -13,6 +13,9 @@
     "dd483a70-936e-4b85-876f-ec7775ec8bf3": {
       "type": "hero",
       "settings": {
+        "hero_banner": "shopify:\/\/shop_images\/dea5d009-8b03-4a90-9a3e-c55cdfcc78d1.jpg",
+        "hero_img1": "shopify:\/\/shop_images\/Rectangle_9.png",
+        "hero_img2": "shopify:\/\/shop_images\/Rectangle_11.png",
         "hero_title": "COLLECTION AND STYLE  FOR EVERYONE",
         "hero_sub": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
         "btn_text": "SHOP NOW",

@@ -163,6 +163,7 @@
         "778959fd-f6b2-4d58-8bea-7070cdfb943a": {
           "type": "text",
           "settings": {
+            "sml_img": "shopify:\/\/shop_images\/Rectangle_51.png",
             "cat_text": "<li>SHOP HATS BEANIES<br><span>AND COLLAR BAGS<\/span>\n<\/li>",
             "card_class": "card-no-margin",
             "cat_url": "shopify:\/\/collections\/collar-bags"
@@ -171,6 +172,7 @@
         "27ba825d-8dfa-4afe-aee7-f37fb5cde3fc": {
           "type": "text",
           "settings": {
+            "sml_img": "shopify:\/\/shop_images\/Rectangle_51.png",
             "cat_text": "<li>SHOP HATS BEANIES<br><span>AND COLLAR BAGS<\/span>\n<\/li>",
             "card_class": "card-margin-left",
             "cat_url": "shopify:\/\/collections\/fishing-t-shirts"
@@ -179,6 +181,7 @@
         "9c612f9c-1f33-4d1a-80b4-5dd87a75a2ff": {
           "type": "text",
           "settings": {
+            "sml_img": "shopify:\/\/shop_images\/Rectangle_51.png",
             "cat_text": "<li>SHOP HATS BEANIES<br><span>AND COLLAR BAGS<\/span>\n<\/li>",
             "card_class": "card-no-margin",
             "cat_url": "shopify:\/\/collections\/hog-hunting"
@@ -191,6 +194,7 @@
         "9c612f9c-1f33-4d1a-80b4-5dd87a75a2ff"
       ],
       "settings": {
+        "cat_img": "shopify:\/\/shop_images\/Rectangle_54.png",
         "cat_title": "Our Category"
       }
     },

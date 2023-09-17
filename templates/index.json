@@ -3,7 +3,7 @@
     "e9c3cf8b-f09d-430a-ac37-f68526563551": {
       "type": "newsletter-popup",
       "settings": {
-        "news_img": "shopify:\/\/shop_images\/i.jpg",
+        "news_img": "shopify:\/\/shop_images\/Rectangle_89.png",
         "fb_link": "https:\/\/www.facebook.com\/noseeumcamo\/",
         "twt_link": "\/",
         "yt_link": "https:\/\/www.youtube.com\/channel\/UC2CxKxhUNfw3tfblxVEg1Ww",
@@ -13,9 +13,6 @@
     "dd483a70-936e-4b85-876f-ec7775ec8bf3": {
       "type": "hero",
       "settings": {
-        "hero_banner": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_1.jpg",
-        "hero_img1": "shopify:\/\/shop_images\/jakob-owens-lkMJcGDZLVs-unsplash_1_1.jpg",
-        "hero_img2": "shopify:\/\/shop_images\/roadtrips-lst-mens-1_1200x1200_1.jpg",
         "hero_title": "COLLECTION AND STYLE  FOR EVERYONE",
         "hero_sub": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
         "btn_text": "SHOP NOW",
@@ -24,7 +21,6 @@
     },
     "image_banner": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -49,6 +45,7 @@
         "heading",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -150,8 +147,6 @@
         "arival_sub": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         "arival_btn_txt": "SHOP NOW",
         "arival_url": "shopify:\/\/collections",
-        "arival_img1": "shopify:\/\/shop_images\/i.jpg",
-        "arival_img2": "shopify:\/\/shop_images\/b.jpg",
         "collection": "",
         "arival_bg_color": "#34321c",
         "ariva_grid_color": "#9c967e"
@@ -163,7 +158,6 @@
         "778959fd-f6b2-4d58-8bea-7070cdfb943a": {
           "type": "text",
           "settings": {
-            "sml_img": "shopify:\/\/shop_images\/il_794xN.3721899471_51p2.jpg",
             "cat_text": "<li>SHOP HATS BEANIES<br><span>AND COLLAR BAGS<\/span>\n<\/li>",
             "card_class": "card-no-margin",
             "cat_url": "shopify:\/\/collections\/collar-bags"
@@ -172,7 +166,6 @@
         "27ba825d-8dfa-4afe-aee7-f37fb5cde3fc": {
           "type": "text",
           "settings": {
-            "sml_img": "shopify:\/\/shop_images\/il_794xN.3721899471_51p2.jpg",
             "cat_text": "<li>SHOP HATS BEANIES<br><span>AND COLLAR BAGS<\/span>\n<\/li>",
             "card_class": "card-margin-left",
             "cat_url": "shopify:\/\/collections\/fishing-t-shirts"
@@ -181,7 +174,6 @@
         "9c612f9c-1f33-4d1a-80b4-5dd87a75a2ff": {
           "type": "text",
           "settings": {
-            "sml_img": "shopify:\/\/shop_images\/il_794xN.3721899471_51p2.jpg",
             "cat_text": "<li>SHOP HATS BEANIES<br><span>AND COLLAR BAGS<\/span>\n<\/li>",
             "card_class": "card-no-margin",
             "cat_url": "shopify:\/\/collections\/hog-hunting"
@@ -194,7 +186,6 @@
         "9c612f9c-1f33-4d1a-80b4-5dd87a75a2ff"
       ],
       "settings": {
-        "cat_img": "shopify:\/\/shop_images\/DALL_E_2023-03-20_09.26.49_-_a_bearded_man_standing_in_a_forest_wearing_tshirt_1.jpg",
         "cat_title": "Our Category"
       }
     },
@@ -261,7 +252,6 @@
         "1d7f57c6-fd21-4fb8-b1f0-07990ceb3f83"
       ],
       "settings": {
-        "pop_background": "shopify:\/\/shop_images\/imgpsh_fullsize_anim.jpg",
         "pop_title": "Popular Products",
         "pop_txt": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
         "btn_text": "Shop Now",
@@ -392,7 +382,6 @@
     },
     "c964e1ea-20af-4297-bec2-c75269cdc72d": {
       "type": "featured-product",
-      "disabled": true,
       "blocks": {
         "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-0": {
           "type": "text",
@@ -445,6 +434,7 @@
         "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-5",
         "template--18496194871584__c964e1ea-20af-4297-bec2-c75269cdc72d-1682489310a44beba0-6"
       ],
+      "disabled": true,
       "settings": {
         "feat_section_title": "PRODUCT OF THE MONTH",
         "product": "anything-scissors",
@@ -469,7 +459,6 @@
         "428d129c-568d-4c13-97d8-88c67ed870b6": {
           "type": "slider",
           "settings": {
-            "slider_item_image": "shopify:\/\/shop_images\/e_bf9a8815-cb99-4088-9a3f-5e2985c16518.jpg",
             "slider_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and",
             "review_author": "James"
           }
@@ -477,7 +466,6 @@
         "a4832846-d9f9-4199-878e-d97c42ba303e": {
           "type": "slider",
           "settings": {
-            "slider_item_image": "shopify:\/\/shop_images\/i.jpg",
             "slider_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and",
             "review_author": "Konor"
           }
@@ -485,7 +473,6 @@
         "ace7e76d-0fc8-40de-8721-9b64ac241523": {
           "type": "slider",
           "settings": {
-            "slider_item_image": "shopify:\/\/shop_images\/jakob-owens-lkMJcGDZLVs-unsplash_1_1.jpg",
             "slider_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and",
             "review_author": "Judy"
           }
@@ -497,7 +484,6 @@
         "ace7e76d-0fc8-40de-8721-9b64ac241523"
       ],
       "settings": {
-        "review_banner": "shopify:\/\/shop_images\/imgpsh_fullsize_anim.jpg",
         "review_title": "WHAT OUR CLIENT SAY ABOUT US"
       }
     },
@@ -533,16 +519,14 @@
         "left_article": "news\/lorem-ipsum-is-simply-dummy-text-of-the-printing-4",
         "margin_top": 0,
         "margin_bottom": 0,
-        "blog_url": "",
-        "home_page_blog_banner": "shopify:\/\/shop_images\/Frame_1009_1.png"
+        "blog_url": ""
       }
     },
     "3216cd75-d488-470f-b5ef-721b4820a0d5": {
       "type": "newslettter",
       "settings": {
         "nwsltr_title": "SUBSCRIBE TO OUR NEWSLETTER",
-        "nwsltr_sub": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Ipsum is simply dummy text of the printing",
-        "nwsltr_img": "shopify:\/\/shop_images\/jakob-owens-TA-aFfdoi7Y-unsplash_1_1.jpg"
+        "nwsltr_sub": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Ipsum is simply dummy text of the printing"
       }
     }
   },

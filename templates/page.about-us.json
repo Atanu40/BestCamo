@@ -20,6 +20,7 @@
     "053350d9-d3dc-4ec2-b2fa-4d5695b0819f": {
       "type": "about-us-image",
       "settings": {
+        "about_us_image": "shopify:\/\/shop_images\/3372f26c-d799-4daf-9b6d-294dbad75717_41ced14e-94f1-4820-aa36-8e70e18bb078.jpg",
         "abt_us_grid_headtxt": "About Us",
         "abt_us_grid_title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only"
       }
@@ -30,6 +31,7 @@
         "4c5040b1-1a61-455b-805a-ed5a45448811": {
           "type": "abt-img-card",
           "settings": {
+            "about_us_image_card": "shopify:\/\/shop_images\/Rectangle_11.png",
             "about_us_image_card_headtxt": "Gary",
             "about_us_image_card_title": "Journalist"
           }
@@ -37,6 +39,7 @@
         "4cd985a5-9227-481a-80a1-061504d91dce": {
           "type": "abt-img-card",
           "settings": {
+            "about_us_image_card": "shopify:\/\/shop_images\/Rectangle_54.png",
             "about_us_image_card_headtxt": "Terry",
             "about_us_image_card_title": "Designer"
           }
@@ -44,6 +47,7 @@
         "3e9b8615-1d8a-43f9-b593-6c1d3750c254": {
           "type": "abt-img-card",
           "settings": {
+            "about_us_image_card": "shopify:\/\/shop_images\/090b0e18-2759-41a3-b004-faa9d987581a.jpg",
             "about_us_image_card_headtxt": "Merry",
             "about_us_image_card_title": "CEO"
           }

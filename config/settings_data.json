@@ -156,7 +156,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Quick links",
-              "footer1": "",
+              "footer1": "footer-2",
               "footer_title": "Customer Care"
             }
           },
@@ -164,7 +164,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Quick links",
-              "footer1": "",
+              "footer1": "footer-3",
               "footer_title": "About Us"
             }
           }

@@ -485,6 +485,7 @@
         "ace7e76d-0fc8-40de-8721-9b64ac241523": {
           "type": "slider",
           "settings": {
+            "slider_item_image": "shopify:\/\/shop_images\/090b0e18-2759-41a3-b004-faa9d987581a.jpg",
             "slider_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and",
             "review_author": "Judy"
           }
@@ -539,7 +540,8 @@
       "type": "newslettter",
       "settings": {
         "nwsltr_title": "SUBSCRIBE TO OUR NEWSLETTER",
-        "nwsltr_sub": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Ipsum is simply dummy text of the printing"
+        "nwsltr_sub": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Ipsum is simply dummy text of the printing",
+        "nwsltr_img": "shopify:\/\/shop_images\/dbdd1297-c081-4446-bddf-53106ecbc086_8844e959-4313-4f25-9812-b1386c8d94ca.jpg"
       }
     }
   },

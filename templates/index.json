@@ -261,6 +261,7 @@
         "1d7f57c6-fd21-4fb8-b1f0-07990ceb3f83"
       ],
       "settings": {
+        "pop_background": "shopify:\/\/shop_images\/3b4822d0-49d7-4eab-89e9-9402c69b8989.jpg",
         "pop_title": "Popular Products",
         "pop_txt": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
         "btn_text": "Shop Now",
@@ -468,6 +469,7 @@
         "428d129c-568d-4c13-97d8-88c67ed870b6": {
           "type": "slider",
           "settings": {
+            "slider_item_image": "shopify:\/\/shop_images\/Rectangle34_3af147d6-643c-4d47-8657-dba4be3a611e.png",
             "slider_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and",
             "review_author": "James"
           }
@@ -475,6 +477,7 @@
         "a4832846-d9f9-4199-878e-d97c42ba303e": {
           "type": "slider",
           "settings": {
+            "slider_item_image": "shopify:\/\/shop_images\/Rectangle35.png",
             "slider_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and",
             "review_author": "Konor"
           }
@@ -493,6 +496,7 @@
         "ace7e76d-0fc8-40de-8721-9b64ac241523"
       ],
       "settings": {
+        "review_banner": "shopify:\/\/shop_images\/3b4822d0-49d7-4eab-89e9-9402c69b8989.jpg",
         "review_title": "WHAT OUR CLIENT SAY ABOUT US"
       }
     },

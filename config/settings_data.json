@@ -176,6 +176,7 @@
         ],
         "settings": {
           "footer_txt": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Ipsum is simply dummy text of the printing",
+          "footer_logo": "shopify:\/\/shop_images\/image_1.png",
           "enable_country_selector": true,
           "ft_bot_left": "© Copyright 2023 by Thebestcamo. All rights reserved.",
           "ft_bot_right": "Designed & developed by Mentis Collective.",

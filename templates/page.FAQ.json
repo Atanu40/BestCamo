@@ -11,7 +11,7 @@
     "af987f94-d969-4b07-8274-4acf3f819641": {
       "type": "about-us-banner",
       "settings": {
-        "abt_us_help_banner": "shopify:\/\/shop_images\/il_794xN.3721899471_51p2.jpg",
+        "abt_us_help_banner": "shopify:\/\/shop_images\/Rectangle_51.png",
         "abt_us_help_title": "FAQ",
         "mt": 0,
         "mb": 0
@@ -172,7 +172,6 @@
     },
     "38144842-1956-48bf-9e75-55a245c0c4cf": {
       "type": "collapsible-content",
-      "disabled": true,
       "blocks": {
         "template--18649475154208__38144842-1956-48bf-9e75-55a245c0c4cf-1682402331290dd8c7-0": {
           "type": "collapsible_row",
@@ -217,6 +216,7 @@
         "template--18649475154208__38144842-1956-48bf-9e75-55a245c0c4cf-1682402331290dd8c7-2",
         "template--18649475154208__38144842-1956-48bf-9e75-55a245c0c4cf-1682402331290dd8c7-3"
       ],
+      "disabled": true,
       "settings": {
         "faq_id": "f3",
         "caption": "",
